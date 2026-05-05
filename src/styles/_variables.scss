@@ -1,0 +1,52 @@
+// porfolio
+$color-portfolio-red: #ff0000;
+$color-portfolio-yellow: #ffe100;
+$color-portfolio-blue: #4271ff;
+
+// color
+
+$color-brand: #00ffd4;
+$color-text-primary: #333333;
+$color-text-primary-alt: #f4f4f4;
+$color-text-secondary: #747474;
+$color-text-secondary-alt: #aaaaaa;
+$color-canvas: #efefef;
+$color-canvas-alt: #101010;
+$color-card: #ffffff;
+$color-card-alt: #292929;
+$color-border-alt: #2a2a2a;
+$color-warning: #f59d21;
+
+//lines
+$border-card: 1.5px solid #333333;
+$border-card-shadow: 3px solid #333333;
+$border-on-card: 1.5px solid #333333;
+$border-card-divider: 1.5px solid #e4e4e4;
+
+// corner
+$corner-card: 2rem;
+$corner-card-small: 1.5rem;
+$corner-on-card: 1rem;
+$corner-button: 2rem;
+
+// shadow
+$shadow-card-l: 0px 8px 0px 0px rgba(0, 0, 0, 0);
+$shadow-card-m: 0px 4px 0px 0px rgba(0, 0, 0, 0);
+$shadow-card-s: 0px 2px 0px 0px rgba(0, 0, 0, 0);
+
+// space
+$gap-large: 3rem;
+$gap: 1rem;
+$gap-small: 0.75rem;
+$padding: 2rem;
+$padding-small: 1.5rem;
+$padding-page: 10rem 2rem;
+
+// break points
+$breakpoint-mobile: 76.8rem;
+$container-max-width-desktop: 110rem;
+
+// responsive breakpoints
+$breakpoint-large: 1024px;
+$breakpoint-medium: 767px;
+$breakpoint-medium-max: 1200px;

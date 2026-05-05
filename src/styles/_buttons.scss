@@ -1,0 +1,53 @@
+@import 'variables';
+
+%button_primary {
+  padding: 1rem 4rem;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  background: $color-text-primary;
+  color: $color-text-primary-alt;
+  border: none;
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-column-gap: 0.5rem;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    stroke: #ffffff;
+  }
+}
+
+%button_secondary {
+  font-size: 1.6rem;
+  background: transparent;
+  border-radius: $corner-button;
+  color: $color-text-primary;
+  border: $border-on-card;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: $shadow-card-s;
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-column-gap: 0.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+%button_text {
+  text-decoration: none;
+  color: $color-text-primary;
+  font-weight: 500;
+}

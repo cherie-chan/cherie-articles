@@ -1,0 +1,72 @@
+@import 'src/styles/imports';
+
+.article {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 160px 24px 24px;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 80px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.titleGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+
+  h1 {
+    font-weight: 500;
+    font-size: 6rem;
+
+    @media (max-width: 768px) {
+      font-size: 3.6rem;
+    }
+  }
+}
+
+.meta {
+  font-size: 16px;
+  color: #666;
+
+  left: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+
+  @media (max-width: 768px) {
+    gap: 120px;
+  }
+}
+
+.presentButton {
+  margin-top: 16px;
+  background: #000;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 80px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &:hover {
+    background: #333;
+  }
+
+  @media (max-width: 1300px) {
+    display: none;
+  }
+}

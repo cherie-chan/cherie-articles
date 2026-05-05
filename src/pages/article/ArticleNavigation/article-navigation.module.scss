@@ -1,0 +1,40 @@
+.articleNavigation {
+  width: 100%;
+  padding: 40px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.navLink {
+  width: 100%;
+  display: flex;
+  transition: all 0.2s ease;
+}
+
+.navContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.navLabel {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.navTitle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}

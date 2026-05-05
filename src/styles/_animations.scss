@@ -1,0 +1,309 @@
+//Float
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 1rem);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+//Fade Ins
+@keyframes fadeInFromBottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-1rem);
+  }
+}
+
+//Slide ins
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// Enhanced slide in from right animation
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// Simple modern animations
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInStagger {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInStagger {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes morphingBackground {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transform: translate3d(0, 0, 0) rotateZ(0deg);
+  }
+  34% {
+    border-radius: 70% 60% 70% 30% / 50% 60% 30% 60%;
+    transform: translate3d(5px, -10px, 0) rotateZ(-5deg);
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    transform: translate3d(-5px, 10px, 0) rotateZ(5deg);
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transform: translate3d(0, 0, 0) rotateZ(0deg);
+  }
+}
+
+@keyframes floatingOrbs {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px) rotate(360deg);
+    opacity: 0.7;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes magneticHover {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(-2px, -2px) scale(1.02);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow:
+      0.05em 0 0 #00fffc,
+      -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+  }
+  15% {
+    text-shadow:
+      0.05em 0 0 #00fffc,
+      -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+  }
+  16% {
+    text-shadow:
+      -0.05em -0.025em 0 #00fffc,
+      0.025em 0.035em 0 #fc00ff,
+      -0.05em -0.05em 0 #fffc00;
+  }
+  49% {
+    text-shadow:
+      -0.05em -0.025em 0 #00fffc,
+      0.025em 0.035em 0 #fc00ff,
+      -0.05em -0.05em 0 #fffc00;
+  }
+  50% {
+    text-shadow:
+      0.05em 0.035em 0 #00fffc,
+      0.03em 0 0 #fc00ff,
+      0 -0.04em 0 #fffc00;
+  }
+  99% {
+    text-shadow:
+      0.05em 0.035em 0 #00fffc,
+      0.03em 0 0 #fc00ff,
+      0 -0.04em 0 #fffc00;
+  }
+  100% {
+    text-shadow:
+      -0.05em 0 0 #00fffc,
+      -0.025em -0.04em 0 #fc00ff,
+      -0.04em -0.025em 0 #fffc00;
+  }
+}
+
+@keyframes textReveal {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+// Coding transformation animation
+@keyframes transformToCoding {
+  0% {
+    transform: translateX(0) scale(1);
+    filter: blur(0);
+  }
+  50% {
+    transform: translateX(-5px) scale(0.98);
+    filter: blur(1px);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+// Transform back from coding
+@keyframes transformFromCoding {
+  0% {
+    transform: translateX(0) scale(1);
+    filter: blur(0);
+  }
+  50% {
+    transform: translateX(5px) scale(0.98);
+    filter: blur(1px);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+// Smoother, more natural card fade-in
+@keyframes fadeInCard {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  70% {
+    opacity: 0.9;
+    transform: translateY(-2px) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+// Man component animations
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes blink {
+  0%,
+  90%,
+  100% {
+    transform: scaleY(1);
+  }
+  95% {
+    transform: scaleY(0.1);
+  }
+}

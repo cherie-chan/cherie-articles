@@ -1,0 +1,119 @@
+.chartContainer {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.chart {
+  position: relative;
+  height: 350px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 80px;
+}
+
+.yAxisLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+  align-items: center;
+}
+
+.yAxisLabel {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  white-space: nowrap;
+  margin-right: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease 0.2s;
+}
+
+.horizontalLine {
+  flex: 1;
+  height: 1px;
+  background: #000;
+}
+
+.baseLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  bottom: 41px;
+  background: #000;
+}
+
+.barContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar {
+  width: 60px;
+  background: #333;
+  box-sizing: border-box;
+}
+
+.universitiesBar {
+  height: 80px;
+  background: #f0f0f0;
+  z-index: 10;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+.worldClassContainer {
+  position: relative;
+}
+
+.worldClassBar {
+  height: 0px;
+  background: #448ce4;
+  border: 1px solid #333;
+  transition: height 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-origin: bottom;
+  box-sizing: border-box;
+}
+
+.barLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .baseLine {
+    bottom: 38px;
+  }
+
+  .chart {
+    gap: 40px;
+    height: 300px;
+  }
+
+  .yAxisLabel {
+    font-size: 14px;
+  }
+
+  .bar {
+    width: 40px;
+    box-sizing: border-box;
+  }
+
+  .universitiesBar {
+    height: 60px;
+    box-sizing: border-box;
+  }
+
+  .barLabel {
+    font-size: 12px;
+  }
+}

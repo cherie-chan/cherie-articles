@@ -1,0 +1,38 @@
+@import '../../styles/animations';
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.aboutLink {
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

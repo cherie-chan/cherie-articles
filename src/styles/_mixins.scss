@@ -1,0 +1,24 @@
+// Responsive Media Query Mixin
+// Usage: @include media(L) { ... } for large screens
+//        @include media(M) { ... } for medium screens
+//        @include media(S) { ... } for small screens
+
+@mixin media($size) {
+  @if $size == L {
+    @media (width >= $breakpoint-large) {
+      @content;
+    }
+  }
+
+  @if $size == M {
+    @media (width >= $breakpoint-medium) and (width <= $breakpoint-medium-max) {
+      @content;
+    }
+  }
+
+  @if $size == S {
+    @media (width <= $breakpoint-medium) {
+      @content;
+    }
+  }
+}

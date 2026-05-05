@@ -1,0 +1,45 @@
+@import 'src/styles/imports';
+
+.video {
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+  border-radius: $corner-card;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  @media (max-width: 768px) {
+    min-height: 300px;
+  }
+
+  // Ensure proper fullscreen behavior
+  &:fullscreen {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &:-webkit-full-screen {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &:-moz-full-screen {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &:-ms-fullscreen {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.presentationMode {
+  min-height: 400px;
+}
+
+.description {
+  margin: 16px 0 0 0;
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+}

@@ -848,7 +848,7 @@ export const data = [
         content:
           "Experimentation shouldn't be a one-off practice. It should be a continuous system spanning the full product lifecycle. From early validation to in-market testing to production scaling, each stage connects and compounds, turning learnings into decisions and decisions into lasting value.",
         image: {
-          src: "/images/experimentation/vision.jpeg",
+          src: "/images/experimentation/v.png",
           description: "The experimentation evolution.",
           noBorder: true,
           noBorderRadius: true,
@@ -917,12 +917,10 @@ export const data = [
         content:
           "Validate impact at scale and inform confident decisions. We use in-market A/B testing to measure behavioural and commercial outcomes, optimise conversion rates, de-risk releases, and establish statistical confidence before committing to full rollout.",
         image: {
-          src: "/images/va/recommenders_new.jpeg",
-          description:
-            "Example: Optimising the PDP product recommender — a small change that drove stronger discovery, engagement, and order value.",
+          src: "/images/experimentation/n.jpeg",
+          description: "Example: a winning personalisation experiment in FY26.",
           noBorder: true,
           noBorderRadius: true,
-          maxHeight: "50vh",
         },
       },
       {
@@ -951,19 +949,20 @@ export const data = [
         ],
       },
       {
+        type: "quote",
+        quote: "Product squads own execution. A CoE ensures quality, consistency, and impact.",
+        highlightWords: ["quality", "consistency", "impact"],
+        highlightColor: "#7a49ba",
+        isTextInverted: true,
+      },
+      {
         type: "contentBlock",
         label: "Operating Model",
         title: "Centre of Excellence",
         content:
           "The CoE defines, enables, and governs the experimentation system, ensuring consistency, quality, and scalable impact across squads. It <strong>owns</strong> frameworks,standards, measurement integrity, tooling, and documentation, and <strong>guides</strong> decision-making, prioritisation, and experimentation approaches.<br><br><strong>Now:</strong> Extend existing experimentation sessions to include in house engineers and embed governance into delivery.<br><br><strong>FY27:</strong> Expand cross-functionally with a lightweight cadence and async collaboration, driving continuous improvement without adding overhead.",
       },
-      {
-        type: "quote",
-        quote: "Product squads own execution. The CoE ensures quality, consistency, and impact.",
-        highlightWords: ["quality", "impact"],
-        highlightColor: "#7a49ba",
-        isTextInverted: true,
-      },
+
       {
         type: "contentBlock",
         label: "Success Measures",
@@ -980,7 +979,7 @@ export const data = [
           {
             icon: "TrendingUp",
             title: "Impact",
-            text: "<strong>#</strong> of squads delivering measurable improvements through early-stage or in-market experimentation<br><strong>$</strong> Attributed incremental revenue (TBC)",
+            text: "<strong>#</strong> of squads delivering measurable improvements through early-stage or in-market experimentation<br><strong>$</strong> revenue uplift through optimisation (TBC)",
           },
           {
             icon: "Users",
@@ -1013,6 +1012,13 @@ export const data = [
             text: "Establish a lightweight CoE Working Group (2–4 contributors including design technologists, ~1 day/week) to deliver tooling, frameworks, and AI workflows.",
           },
         ],
+      },
+      {
+        type: "quote",
+        quote: "Exciting AI use cases and updates to come. Watch this space.",
+        highlightWords: ["AI"],
+        highlightColor: "#7a49ba",
+        isTextInverted: true,
       },
     ],
   },

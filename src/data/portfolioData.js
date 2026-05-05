@@ -984,7 +984,7 @@ export const data = [
           {
             icon: "Users",
             title: "Continuity",
-            text: "<strong>%</strong> of experiment learnings documented and shared across teams<br><strong>%</strong> of winning experiments scaled to production",
+            text: "<strong>%</strong> of experiment learnings documented and shared across teams<br><strong>%</strong> of winning experiments scaled to production within a defined timeframe",
           },
         ],
       },

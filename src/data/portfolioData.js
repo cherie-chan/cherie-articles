@@ -809,6 +809,7 @@ export const data = [
           },
         ],
       },
+
       {
         type: "contentBlock",
         label: "FY26 Challenges",
@@ -830,7 +831,7 @@ export const data = [
           {
             icon: "BarChart2",
             title: "Value recognition",
-            text: "Difficulty attributing long-term value and relative, forecasted value can easily be impacted by unpredictable changes.",
+            text: "Difficulty attributing long-term value and relative, forecasted value can easily be impacted by unpredictable prodcution changes.",
           },
 
           {
@@ -839,6 +840,19 @@ export const data = [
             text: "Visitor ID inconsistencies and availability issues constrain experimentation. Legacy experiments, events, and audiences add maintenance overhead.",
           },
         ],
+      },
+      {
+        type: "contentBlock",
+        label: "Vision",
+        title: "The evolution vision",
+        content:
+          "Experimentation shouldn't be a one-off practice. It should be a continuous system spanning the full product lifecycle. From early validation to in-market testing to production scaling, each stage connects and compounds, turning learnings into decisions and decisions into lasting value.",
+        image: {
+          src: "/images/experimentation/vision.jpeg",
+          description: "The experimentation evolution.",
+          noBorder: true,
+          noBorderRadius: true,
+        },
       },
       {
         type: "contentBlock",
@@ -854,14 +868,14 @@ export const data = [
             text: "Reduce unintended side effects and production risk. Increase rate of conclusive outcomes.",
           },
           {
-            icon: "Network",
-            title: "External resources → In-house capability",
-            text: "Enable squads to independently run high-quality  experiments. ",
+            icon: "RefreshCcw",
+            title: "Fragmented testing → Continuous system",
+            text: "Connect early validation, in-market testing, and production outcomes into one system, where learnings are shared across squads.",
           },
           {
-            icon: "RefreshCcw",
-            title: "Isolated testing → Continuous system",
-            text: "Expand experimentation across the product lifecycle. Connect early validation, in-market testing, and production outcomes.",
+            icon: "Network",
+            title: "External resources → In-house capability",
+            text: "Enable squads to independently run high-quality experiments. ",
           },
         ],
       },
@@ -878,7 +892,7 @@ export const data = [
         label: "Stage 1",
         title: "Early-stage experimentation",
         content:
-          "Validate ideas with stakeholders and customers before committing to engineering investment. We've already seen this work in action.<br><br>In FY27, the opportunity is to scale this further with deeper AI integration, enabling faster, higher-fidelity validation at much lower cost, and using AI to bridge the gap between prototype and production, whether that's a clear path to A/B testing or outputs that meaningfully accelerate engineering delivery.",
+          "Validate ideas with stakeholders and customers before committing to engineering investment. We've already seen this work in action. In FY27, the opportunity is to scale this further with deeper AI integration, enabling faster, higher-fidelity validation at much lower cost, and using AI to bridge the gap between prototype and production.",
         display: "carousel",
         items: [
           { image: { src: "/images/va/concept.jpeg", description: "Initial mosaic design concept" } },
@@ -901,7 +915,7 @@ export const data = [
         label: "Stage 2",
         title: "In-market experimentation",
         content:
-          "Validate impact at scale and inform confident decisions. We use in-market A/B testing to measure behavioural and commercial outcomes, de-risk releases, and establish statistical confidence before committing to full rollout.",
+          "Validate impact at scale and inform confident decisions. We use in-market A/B testing to measure behavioural and commercial outcomes, optimise conversion rates, de-risk releases, and establish statistical confidence before committing to full rollout.",
         image: {
           src: "/images/va/recommenders_new.jpeg",
           description:
@@ -915,24 +929,24 @@ export const data = [
         type: "contentBlock",
         label: "Stage 3",
         title: "Experiment → production",
-        content:
-          "Translate validated experiments into production efficiently, with AI helping to bridge the gap between experiment code and production-ready delivery.",
+        content: "Translate validated experiments into production efficiently. Three key components enable this:",
+        itemBgColor: "#F4F2EF",
         columns: { l: 3, md: 1, s: 1 },
         items: [
           {
             icon: "Bot",
-            title: "AI-assisted delivery",
-            text: "Use AI to accelerate the gap between experiment and production, generating high quality code and handoff assets.",
+            title: "AI leverage",
+            text: "Use AI to close the gap between experiment and production, generating high quality code and delivery artefacts.",
+          },
+          {
+            icon: "Component",
+            title: "Design system",
+            text: "Reusable components and shared styles keep experiment code closer to production from day one, reducing rework at handoff.",
           },
           {
             icon: "SquaresUnite",
             title: "Tech alignment",
-            text: "Shared patterns and guardrails that keep experiments consistent with production standards from the start.",
-          },
-          {
-            icon: "Component",
-            title: "Design system adoption",
-            text: "A strong, widely adopted design system with reusable components and styles reduces rework and accelerates the path to production.",
+            text: "Shared patterns and guardrails ensure experiments meet production standards before handoff, not after.",
           },
         ],
       },
@@ -941,7 +955,7 @@ export const data = [
         label: "Operating Model",
         title: "Centre of Excellence",
         content:
-          "The CoE defines, enables, and governs the experimentation system — ensuring consistency, quality, and scalable impact across squads. It <strong>owns</strong> standards, measurement integrity, tooling, and documentation, and <strong>guides</strong> decision-making, prioritisation, and experimentation approaches.<br><br><strong>Now:</strong> Extend existing experimentation sessions to include in house engineers and embed governance into delivery.<br><br><strong>FY27:</strong> Expand cross-functionally with a lightweight cadence and async collaboration, driving continuous improvement without adding overhead.",
+          "The CoE defines, enables, and governs the experimentation system, ensuring consistency, quality, and scalable impact across squads. It <strong>owns</strong> frameworks,standards, measurement integrity, tooling, and documentation, and <strong>guides</strong> decision-making, prioritisation, and experimentation approaches.<br><br><strong>Now:</strong> Extend existing experimentation sessions to include in house engineers and embed governance into delivery.<br><br><strong>FY27:</strong> Expand cross-functionally with a lightweight cadence and async collaboration, driving continuous improvement without adding overhead.",
       },
       {
         type: "quote",
@@ -954,7 +968,8 @@ export const data = [
         type: "contentBlock",
         label: "Success Measures",
         title: "FY27 success measures",
-        content: "Focus on quality, impact, and continuity. Not just velocity.",
+        itemBgColor: "#F4F2EF",
+        content: "Focus on quality, impact, and continuity. Not just velocity and revenue.",
         columns: { l: 3, md: 1, s: 1 },
         items: [
           {
@@ -979,6 +994,7 @@ export const data = [
         label: "The Ask",
         title: "What we need from leadership",
         content: "To enable this shift:",
+        itemBgColor: "#F4F2EF",
         columns: { l: 3, md: 1, s: 1 },
         items: [
           {
@@ -994,7 +1010,7 @@ export const data = [
           {
             icon: "Users",
             title: "Enable execution",
-            text: "Establish a lightweight CoE Working Group (2–4 contributors, ~1 day/week) to deliver tooling, frameworks, and AI workflows.",
+            text: "Establish a lightweight CoE Working Group (2–4 contributors including design technologists, ~1 day/week) to deliver tooling, frameworks, and AI workflows.",
           },
         ],
       },

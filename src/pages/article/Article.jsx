@@ -1,46 +1,46 @@
-import { useParams } from 'react-router-dom'
-import { useEffect } from 'react'
-import c from './article.module.scss'
-import { data, aboutData } from '../../data/portfolioData'
-import Navigation from '../../components/navigation/Navigation'
-import VideoBlock from './ContentBlocks/VideoBlock/VideoBlock'
-import CustomBlock from './ContentBlocks/CustomBlock/CustomBlock'
-import ContentBlock from './ContentBlocks/ContentBlock/ContentBlock'
-import QuoteBlock from './ContentBlocks/QuoteBlock/QuoteBlock'
-import PresentationModal from '../../components/PresentationModal/PresentationModal'
-import { Play } from 'lucide-react'
-import { usePresentationMode } from '../../contexts/PresentationContext'
-import ArticleNavigation from './ArticleNavigation/ArticleNavigation'
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
+import c from "./article.module.scss";
+import { data, aboutData } from "../../data/portfolioData";
+import Navigation from "../../components/navigation/Navigation";
+import VideoBlock from "./ContentBlocks/VideoBlock/VideoBlock";
+import CustomBlock from "./ContentBlocks/CustomBlock/CustomBlock";
+import ContentBlock from "./ContentBlocks/ContentBlock/ContentBlock";
+import QuoteBlock from "./ContentBlocks/QuoteBlock/QuoteBlock";
+import PresentationModal from "../../components/PresentationModal/PresentationModal";
+import { Play } from "lucide-react";
+import { usePresentationMode } from "../../contexts/PresentationContext";
+import ArticleNavigation from "./ArticleNavigation/ArticleNavigation";
 
 const Article = ({ isAbout = false }) => {
-  const { title } = useParams()
-  const { isPresentationMode, enterPresentationMode, exitPresentationMode } = usePresentationMode()
+  const { title } = useParams();
+  const { isPresentationMode, enterPresentationMode, exitPresentationMode } = usePresentationMode();
 
-  const articleData = isAbout ? aboutData : data.find((article) => article.title === decodeURIComponent(title))
+  const articleData = isAbout ? aboutData : data.find((article) => article.title === decodeURIComponent(title));
 
   // Reset scroll to top when article changes
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [title, isAbout]) // Reset when title or isAbout changes
+    window.scrollTo(0, 0);
+  }, [title, isAbout]); // Reset when title or isAbout changes
 
   if (!articleData) {
-    return <div>Article not found</div>
+    return <div>Article not found</div>;
   }
 
   const renderContentBlock = (block, index) => {
     switch (block.type) {
-      case 'video':
-        return <VideoBlock key={index} {...block} />
-      case 'contentBlock':
-        return <ContentBlock key={index} {...block} />
-      case 'custom':
-        return <CustomBlock key={index} {...block} />
-      case 'quote':
-        return <QuoteBlock key={index} {...block} />
+      case "video":
+        return <VideoBlock key={index} {...block} />;
+      case "contentBlock":
+        return <ContentBlock key={index} {...block} />;
+      case "custom":
+        return <CustomBlock key={index} {...block} />;
+      case "quote":
+        return <QuoteBlock key={index} {...block} />;
       default:
-        return null
+        return null;
     }
-  }
+  };
 
   return (
     <>
@@ -65,9 +65,6 @@ const Article = ({ isAbout = false }) => {
         </header>
 
         <div className={c.content}>{articleData.content?.map((block, index) => renderContentBlock(block, index))}</div>
-
-        {/* Add navigation only for regular articles, not for about page */}
-        {!isAbout && <ArticleNavigation currentArticle={articleData} allArticles={data} />}
       </div>
 
       <PresentationModal
@@ -76,7 +73,7 @@ const Article = ({ isAbout = false }) => {
         slides={articleData.content || []}
       />
     </>
-  )
-}
+  );
+};
 
-export default Article
+export default Article;

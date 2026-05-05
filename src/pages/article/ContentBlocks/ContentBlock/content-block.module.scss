@@ -1,4 +1,4 @@
-@import 'src/styles/imports';
+@import "src/styles/imports";
 
 .block {
   display: flex;
@@ -64,6 +64,12 @@
       font-size: 14px;
     }
   }
+}
+
+.imageContainerCentered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .image,

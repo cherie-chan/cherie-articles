@@ -1008,8 +1008,8 @@ export const data = [
           },
           {
             icon: "Users",
-            title: "Enable execution",
-            text: "Establish a lightweight CoE Working Group (2–4 contributors including design technologists, ~1 day/week) to deliver tooling, frameworks, and AI workflows.",
+            title: "Commit capacity",
+            text: "Allocate 2–4 contributors (including design technologists) to a CoE Working Group,  either ongoing at 10–20% capacity, or a focused T1 boost to ship key deliverables, then sustain at lower capacity.",
           },
         ],
       },

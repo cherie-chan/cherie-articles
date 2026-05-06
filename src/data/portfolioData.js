@@ -786,6 +786,7 @@ export const data = [
         type: "contentBlock",
         label: "FY26 Wins",
         title: "What we achieved",
+        celebrate: true,
         content: "As of early May 2026, FY26 delivered meaningful results across scale, value, and capability.",
         columns: { l: 3, md: 2, s: 1 },
         itemBgColor: "#F4F2EF",

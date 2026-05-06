@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import * as LucideIcons from "lucide-react";
 import c from "./content-block.module.scss";
 import useOnScreen from "../../../../hooks/useOnScreen";
+import useCelebrate from "../../../../hooks/useCelebrate";
 import VideoBlock from "../VideoBlock/VideoBlock";
 import { usePresentationMode } from "../../../../contexts/PresentationContext";
 import Carousel from "./Carousel/Carousel";
@@ -26,11 +27,14 @@ const ContentBlock = ({
   customComponent,
   itemBgColor,
   slides,
+  celebrate = false,
 }) => {
   const { isPresentationMode } = usePresentationMode();
   const blockRef = useRef();
   const [forceVisible, setForceVisible] = useState(false);
   const isVisible = useOnScreen(blockRef) || forceVisible;
+  const isMostlyVisible = useOnScreen(blockRef, 1) || forceVisible;
+  useCelebrate(celebrate && isMostlyVisible, celebrate && isPresentationMode && forceVisible);
 
   // Force animations in presentation mode
   useEffect(() => {

@@ -1,10 +1,18 @@
-import React, { useRef, lazy, Suspense, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import * as LucideIcons from "lucide-react";
 import c from "./content-block.module.scss";
 import useOnScreen from "../../../../hooks/useOnScreen";
 import VideoBlock from "../VideoBlock/VideoBlock";
 import { usePresentationMode } from "../../../../contexts/PresentationContext";
 import Carousel from "./Carousel/Carousel";
+import SlideCarousel from "./SlideCarousel/SlideCarousel";
+import AnimatedBarChart from "../../CustomComponents/AnimatedBarChart/AnimatedBarChart";
+import ExperimentationLifecycle from "../../CustomComponents/ExperimentationLifecycle/ExperimentationLifecycle";
+
+const customComponentMap = {
+  "pages/article/CustomComponents/AnimatedBarChart/AnimatedBarChart": AnimatedBarChart,
+  "pages/article/CustomComponents/ExperimentationLifecycle/ExperimentationLifecycle": ExperimentationLifecycle,
+};
 
 const ContentBlock = ({
   label,
@@ -17,6 +25,7 @@ const ContentBlock = ({
   display = "grid",
   customComponent,
   itemBgColor,
+  slides,
 }) => {
   const { isPresentationMode } = usePresentationMode();
   const blockRef = useRef();
@@ -34,13 +43,8 @@ const ContentBlock = ({
     }
   }, [isPresentationMode]);
 
-  // Lazy load custom component if provided
-  const LazyCustomComponent = customComponent
-    ? lazy(() => {
-        const componentPath = customComponent.replace(/^src\//, "").replace(/\.jsx$/, "");
-        return import(`../../../../${componentPath}`);
-      })
-    : null;
+  // Resolve custom component statically
+  const CustomComponent = customComponent ? customComponentMap[customComponent] : null;
 
   const getGridStyle = () => {
     if (!columns) {
@@ -136,11 +140,9 @@ const ContentBlock = ({
         </div>
       )}
 
-      {customComponent && LazyCustomComponent && (
+      {customComponent && CustomComponent && (
         <div className={c.customComponentContainer}>
-          <Suspense fallback={<div>Loading...</div>}>
-            <LazyCustomComponent />
-          </Suspense>
+          <CustomComponent />
         </div>
       )}
       {items?.length > 0 && display === "grid" && (
@@ -151,6 +153,7 @@ const ContentBlock = ({
         </div>
       )}
       {items && display === "carousel" && <Carousel items={items} />}
+      {slides && display === "slideCarousel" && <SlideCarousel slides={slides} />}
     </div>
   );
 };

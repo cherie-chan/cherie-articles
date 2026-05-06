@@ -568,7 +568,6 @@ export const data = [
         image: {
           src: "/images/va/neg.png",
           description: "Experiment: Search box placeholder optimisation.",
-
           noBorder: true,
           noBorderRadius: true,
         },
@@ -846,13 +845,8 @@ export const data = [
         label: "Vision",
         title: "The evolution vision",
         content:
-          "Experimentation shouldn't be a one-off practice. It should be a continuous system spanning the full product lifecycle. From early validation to in-market testing to production scaling, each stage connects and compounds, turning learnings into decisions and decisions into lasting value.",
-        image: {
-          src: "/images/experimentation/v.png",
-          description: "The experimentation evolution.",
-          noBorder: true,
-          noBorderRadius: true,
-        },
+          "Experimentation shouldn't be a one-off practice. It should be <strong>a continuous system</strong> spanning the full product lifecycle,  where each stage connects and compounds, turning learnings into decisions and decisions into lasting value.",
+        customComponent: "pages/article/CustomComponents/ExperimentationLifecycle/ExperimentationLifecycle",
       },
       {
         type: "contentBlock",
@@ -916,12 +910,21 @@ export const data = [
         title: "In-market experimentation",
         content:
           "Validate impact at scale and inform confident decisions. We use in-market A/B testing to measure behavioural and commercial outcomes, optimise conversion rates, de-risk releases, and establish statistical confidence before committing to full rollout.",
-        image: {
-          src: "/images/experimentation/n.jpeg",
-          description: "Example: a winning personalisation experiment in FY26.",
-          noBorder: true,
-          noBorderRadius: true,
-        },
+        display: "slideCarousel",
+        slides: [
+          {
+            image: "/images/experimentation/Slide1.png",
+            title: "Experiment example in FY26",
+          },
+          {
+            image: "/images/experimentation/Slide2.png",
+            title: "Experiment example in FY26",
+          },
+          {
+            image: "/images/experimentation/Slide3.png",
+            title: "Experiment example in FY26",
+          },
+        ],
       },
       {
         type: "contentBlock",

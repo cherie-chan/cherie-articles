@@ -1042,7 +1042,7 @@ export const data = [
           {
             icon: "Users",
             title: "Commit capacity",
-            text: "Allocate 2–4 contributors (including design technologists) to a CoE Working Group,  either ongoing at 10–20% capacity, or a focused T1 boost to ship key deliverables, then sustain at lower capacity.",
+            text: "Allocate 2–4 contributors (including engineering and product roles) ongoingly delivering practice improvement work at 10–20% capacity, can do focused boosts to ship key deliverables.",
           },
         ],
       },

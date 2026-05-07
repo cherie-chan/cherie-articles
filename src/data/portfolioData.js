@@ -1042,7 +1042,7 @@ export const data = [
           {
             icon: "Users",
             title: "Commit capacity",
-            text: "Allocate 2–4 contributors (including engineering and product roles) ongoingly delivering practice improvement work at 10–20% capacity, can do focused boosts to ship key deliverables.",
+            text: "Allocate product and engineering contributors for ongoing enablement—frameworks, tooling, support, and workflow testing.",
           },
         ],
       },

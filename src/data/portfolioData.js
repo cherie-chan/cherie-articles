@@ -862,14 +862,14 @@ export const data = [
             text: "Increase the rate of conclusive outcomes, minimize unintended side effects and production risks, and ensure more tests are supported by  data or research.",
           },
           {
+            icon: "Network",
+            title: "From siloed stream to core capability",
+            text: "Experimentation is embedded in product and engineering, not a separate stream. Teams experiment where it adds real value, not for its own sake.",
+          },
+          {
             icon: "RefreshCcw",
             title: "Fragmented testing → Continuous system",
             text: "Connect early validation, in-market testing, and production outcomes into one system, where learnings are shared across squads.",
-          },
-          {
-            icon: "Network",
-            title: "External resources → In-house capability",
-            text: "Empower squads to independently design, execute, learn, and drive both commercial and customer value from high-quality experiments.",
           },
         ],
       },
@@ -1042,7 +1042,7 @@ export const data = [
           {
             icon: "Users",
             title: "Commit capacity",
-            text: "Allocate 2–4 contributors (including design technologists) to a CoE Working Group,  either ongoing at 10–20% capacity, or a focused T1 boost to ship key deliverables, then sustain at lower capacity.",
+            text: "Allocate 2–4 contributors (including engineers and product) to a Working Group, ongoing at 10–20% capacity, with the ability to do focused boosts to ship key deliverables.",
           },
         ],
       },

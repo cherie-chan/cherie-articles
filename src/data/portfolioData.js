@@ -869,7 +869,7 @@ export const data = [
           {
             icon: "Network",
             title: "External resources → In-house capability",
-            text: "Empower squads to independently design, execute, and learn from high-quality experiments. ",
+            text: "Empower squads to independently design, execute, learn, and drive both commercial and customer value from high-quality experiments.",
           },
         ],
       },
@@ -913,15 +913,15 @@ export const data = [
         slides: [
           {
             image: "/images/experimentation/Slide1.png",
-            title: "Experiment example in FY26",
+            title: "Experiment concluded in FY26",
           },
           {
             image: "/images/experimentation/Slide2.png",
-            title: "Experiment example in FY26",
+            title: "Experiment concluded in FY26",
           },
           {
             image: "/images/experimentation/Slide3.png",
-            title: "Experiment example in FY26",
+            title: "Experiment concluded in FY26",
           },
         ],
       },
@@ -964,6 +964,37 @@ export const data = [
         content:
           "The CoE defines, enables, and governs the experimentation system, ensuring consistency, quality, and scalable impact across squads. It <strong>owns</strong> frameworks, standards, measurement integrity, tooling, and documentation, and <strong>guides</strong> decision-making, prioritisation, and experimentation approaches.<br><br><strong>Now:</strong> Extend existing experimentation sessions to include in house engineers and embed governance into delivery.<br><br><strong>FY27:</strong> Expand cross-functionally with a lightweight cadence and async collaboration, driving continuous improvement without adding overhead.",
       },
+      {
+        type: "contentBlock",
+        label: "AI Leverage",
+        title: "AI-powered experimentation",
+        content:
+          "These are the <strong>major blocks for how AI can strengthen experimentation across the lifecycle</strong>. The detailed plan is still being shaped, but the direction is clear: use AI to help us learn faster, build better, and scale validated outcomes more effectively.",
+        itemBgColor: "#F4F2EF",
+        columns: { l: 2, md: 2, s: 1 },
+        items: [
+          {
+            icon: "Zap",
+            title: "Quality & efficiency",
+            text: "Use AI to accelerate and enhance the entire experimentation lifecycle, from ideation and hypothesis building to design, prototyping, execution, analysis, reporting, and governance. Leveraging partnerships with Optimizely, Google, OpenAI, and Microsoft.",
+          },
+          {
+            icon: "BookOpen",
+            title: "Knowledge building",
+            text: "Connect AI agents with experiment outcomes and unique team insights in a shared repository, enabling faster, context-aware decision-making across squads.",
+          },
+          {
+            icon: "Users",
+            title: "Customer-facing optimisation",
+            text: "Explore GenAI-enabled features and how we test and optimise them in production, in collaboration with the data team.",
+          },
+          {
+            icon: "Cpu",
+            title: "Future of experimentation",
+            text: "Move beyond CX-layer testing toward system-level optimisation, including how we test and evaluate AI models at scale in production.",
+          },
+        ],
+      },
 
       {
         type: "contentBlock",
@@ -981,7 +1012,7 @@ export const data = [
           {
             icon: "TrendingUp",
             title: "Impact",
-            text: "<strong>#</strong> of squads delivering measurable improvements through early-stage or in-market experimentation<br><strong>$</strong> revenue uplift through optimisation (TBC)",
+            text: "<strong>#</strong> of squads delivering measurable improvements through early-stage or in-market experimentation<br><strong>$</strong> revenue uplift through CRO initiatives (TBC)",
           },
           {
             icon: "Users",

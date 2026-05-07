@@ -32,11 +32,27 @@ const ContentBlock = ({
   const { isPresentationMode } = usePresentationMode();
   const blockRef = useRef();
   const [forceVisible, setForceVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== "undefined" ? window.matchMedia("(max-width: 768px)").matches : false,
+  );
   const isVisible = useOnScreen(blockRef) || forceVisible;
-  const isMostlyVisible = useOnScreen(blockRef, 1) || forceVisible;
+  const celebrateThreshold = isMobile ? 0.5 : 1;
+  const isMostlyVisible = useOnScreen(blockRef, celebrateThreshold) || forceVisible;
   useCelebrate(celebrate && isMostlyVisible, celebrate && isPresentationMode && forceVisible);
 
   // Force animations in presentation mode
+  useEffect(() => {
+    const media = window.matchMedia("(max-width: 768px)");
+    setIsMobile(media.matches);
+
+    const handleMediaChange = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    media.addEventListener("change", handleMediaChange);
+    return () => media.removeEventListener("change", handleMediaChange);
+  }, []);
+
   useEffect(() => {
     if (isPresentationMode) {
       // Small delay to ensure DOM is ready

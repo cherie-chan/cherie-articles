@@ -780,7 +780,7 @@ export const data = [
         label: "Executive Summary",
         title: "Overview",
         content:
-          "In FY26, we delivered <strong>100+ A/B tests across 6 product squads</strong>, recognising <strong>$8.1M in CRO lift</strong> ($13.6M annualised) and <strong>$7M in strategic uplift</strong> ($11.4M annualised) in H1.<br><br>But platform instability, value attribution gaps, and delivery pressure exposed real limits in quality and rigour.<br><br>In FY27, experimentation will evolve from in-market testing to <strong>a full lifecycle system spanning early validation, in-market experimentation, and production scaling</strong>, enabling teams to make better decisions earlier, run higher-quality experiments, and convert validated insights into long-term value.",
+          "In FY26, we delivered <strong>100+ A/B tests across 6 product squads</strong>, recognising <strong>$8.1M in CRO lift</strong> ($13.6M annualised) and <strong>$7M in strategic uplift</strong> ($11.4M annualised) in H1.<br><br>In FY27, experimentation will evolve from in-market testing to <strong>a full lifecycle system spanning early validation, in-market experimentation, and production scaling</strong>, enabling teams to make better decisions earlier, run higher-quality experiments, and convert validated insights into long-term value.",
       },
       {
         type: "contentBlock",
@@ -792,16 +792,15 @@ export const data = [
         itemBgColor: "#F4F2EF",
         items: [
           {
-            icon: "ShieldCheck",
-            title: "De-risked features, prevented losses",
-            text: "Caught negative impacts before full rollout, including Target SPC and Kmart PDP recommender changes, protecting revenue.",
-          },
-          {
             icon: "FlaskConical",
             title: "100+ A/B tests across 6+ squads",
             text: "Product squads independently owned and ran tests, marking a meaningful shift in adoption and capability.",
           },
-
+          {
+            icon: "ShieldCheck",
+            title: "De-risked features, prevented losses",
+            text: "Caught negative impacts before full rollout, including Target SPC and Kmart PDP recommender changes, protecting revenue.",
+          },
           {
             icon: "TrendingUp",
             title: "Revenue lift recognised",
@@ -846,7 +845,7 @@ export const data = [
         label: "Vision",
         title: "The evolution vision",
         content:
-          "Experimentation shouldn't be a one-off practice. It should be <strong>a continuous system</strong> spanning the full product lifecycle,  where each stage connects and compounds, turning learnings into decisions and decisions into lasting value.",
+          "<strong>Experimentation shouldn't be a one-off practice.</strong> It should be <strong>a continuous system</strong> spanning the full product lifecycle,  where each stage connects and compounds, turning learnings into decisions and decisions into lasting value.",
         customComponent: "pages/article/CustomComponents/ExperimentationLifecycle/ExperimentationLifecycle",
       },
       {
@@ -859,8 +858,8 @@ export const data = [
         items: [
           {
             icon: "Target",
-            title: "Velocity → Quality & decision confidence",
-            text: "Reduce unintended side effects and production risk. Increase rate of conclusive outcomes.",
+            title: "Velocity → Quality",
+            text: "Increase the rate of conclusive outcomes, minimize unintended side effects and production risks, and ensure more tests are supported by  data or research.",
           },
           {
             icon: "RefreshCcw",
@@ -870,11 +869,10 @@ export const data = [
           {
             icon: "Network",
             title: "External resources → In-house capability",
-            text: "Enable squads to independently run high-quality experiments. ",
+            text: "Empower squads to independently design, execute, and learn from high-quality experiments. ",
           },
         ],
       },
-
       {
         type: "quote",
         quote: "Three stages. One system. Validate early, prove in-market, scale to production.",
@@ -887,7 +885,7 @@ export const data = [
         label: "Stage 1",
         title: "Early-stage experimentation",
         content:
-          "Validate ideas with stakeholders and customers before committing to engineering investment. We've already seen this work in action. In FY27, the opportunity is to scale this further with deeper AI integration, enabling faster, higher-fidelity validation at much lower cost, and using AI to bridge the gap between prototype and production.",
+          "<strong>Validate ideas with stakeholders and customers</strong> before committing to engineering investment. We’ve already explored this framework in practice. In FY27, the opportunity is to scale this further with <strong>stronger AI leverage</strong>, enabling faster, higher-fidelity validation at much lower cost, and using AI to <strong>bridge the gap between prototype and production ready code.</strong>",
         display: "carousel",
         items: [
           { image: { src: "/images/va/concept.jpeg", description: "Initial mosaic design concept" } },
@@ -910,7 +908,7 @@ export const data = [
         label: "Stage 2",
         title: "In-market experimentation",
         content:
-          "Validate impact at scale and inform confident decisions. We use in-market A/B testing to measure behavioural and commercial outcomes, optimise conversion rates, de-risk releases, and establish statistical confidence before committing to full rollout.",
+          "<strong>Validate impact at scale and inform confident decisions.</strong> We use in-market A/B testing to measure behavioural and commercial outcomes, optimise conversion rates, de-risk releases, and establish statistical confidence before committing to full rollout.",
         display: "slideCarousel",
         slides: [
           {

@@ -962,7 +962,7 @@ export const data = [
         label: "Operating Model",
         title: "Centre of Excellence",
         content:
-          "The CoE defines, enables, and governs the experimentation system, ensuring consistency, quality, and scalable impact across squads. It <strong>owns</strong> frameworks, standards, measurement integrity, tooling, and documentation, and <strong>guides</strong> decision-making, prioritisation, and experimentation approaches.<br><br><strong>Now:</strong> Extend existing experimentation sessions to include in house engineers and embed governance into delivery.<br><br><strong>FY27:</strong> Expand cross-functionally with a lightweight cadence and async collaboration, driving continuous improvement without adding overhead.",
+          "<strong>The CoE defines, enables, and governs the experimentation system</strong>, ensuring consistency, quality, and scalable impact across squads. It <strong>owns</strong> frameworks, standards, measurement integrity, tooling, and documentation, and <strong>guides</strong> decision-making, prioritisation, and experimentation approaches.<br><br><strong>Now:</strong> Extend existing experimentation sessions to include in house engineers and embed governance into delivery.<br><br><strong>FY27:</strong> Expand cross-functionally with a lightweight cadence and async collaboration, driving continuous improvement without adding overhead.",
       },
       {
         type: "contentBlock",
@@ -976,7 +976,7 @@ export const data = [
           {
             icon: "Zap",
             title: "Quality & efficiency",
-            text: "Use AI to accelerate and enhance the entire experimentation lifecycle, from ideation and hypothesis building to design, prototyping, execution, analysis, reporting, and governance. Leveraging partnerships with Optimizely, Google, OpenAI, and Microsoft.",
+            text: "Use AI to accelerate and enhance the entire experimentation lifecycle, from ideation to results interpretation. Leveraging partnerships with Optimizely, Google, OpenAI, and Microsoft.",
           },
           {
             icon: "BookOpen",

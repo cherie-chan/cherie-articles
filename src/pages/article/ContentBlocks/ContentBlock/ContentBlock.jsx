@@ -9,10 +9,12 @@ import Carousel from "./Carousel/Carousel";
 import SlideCarousel from "./SlideCarousel/SlideCarousel";
 import AnimatedBarChart from "../../CustomComponents/AnimatedBarChart/AnimatedBarChart";
 import ExperimentationLifecycle from "../../CustomComponents/ExperimentationLifecycle/ExperimentationLifecycle";
+import AgenticABTestingLifecycle from "../../CustomComponents/AgenticABTestingLifecycle/AgenticABTestingLifecycle";
 
 const customComponentMap = {
   "pages/article/CustomComponents/AnimatedBarChart/AnimatedBarChart": AnimatedBarChart,
   "pages/article/CustomComponents/ExperimentationLifecycle/ExperimentationLifecycle": ExperimentationLifecycle,
+  "pages/article/CustomComponents/AgenticABTestingLifecycle/AgenticABTestingLifecycle": AgenticABTestingLifecycle,
 };
 
 const ContentBlock = ({
@@ -28,6 +30,7 @@ const ContentBlock = ({
   itemBgColor,
   slides,
   celebrate = false,
+  customComponentProps,
 }) => {
   const { isPresentationMode } = usePresentationMode();
   const blockRef = useRef();
@@ -162,7 +165,7 @@ const ContentBlock = ({
 
       {customComponent && CustomComponent && (
         <div className={c.customComponentContainer}>
-          <CustomComponent />
+          <CustomComponent {...(customComponentProps || {})} />
         </div>
       )}
       {items?.length > 0 && display === "grid" && (

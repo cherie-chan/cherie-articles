@@ -995,6 +995,55 @@ export const data = [
           },
         ],
       },
+      {
+        type: "contentBlock",
+        label: "AI Leverage",
+        title: "Agentic A/B Testing Lifecycle",
+        content:
+          "<strong>The A/B testing lifecycle is inherently cross-functional</strong>, spanning design, engineering, and data teams at every stage. As AI adoption continues to grow across the organisation, there is a significant opportunity to embed agentic tooling throughout the process. Several of these capabilities are already underway.",
+        customComponent: "pages/article/CustomComponents/AgenticABTestingLifecycle/AgenticABTestingLifecycle",
+        customComponentProps: {
+          curve: {
+            xPadding: 10,
+            baseY: 50,
+            amplitude: 10,
+          },
+          stages: [
+            {
+              title: "Ideate",
+              points: ["Test ideation", "Hypothesis builder"],
+            },
+            {
+              title: "Craft & Plan",
+              points: ["Test plans", "Variant generation", "Metric blueprint"],
+            },
+            {
+              title: "Design",
+              points: ["Rapid prototyping", "Design generation"],
+            },
+            {
+              title: "Execute",
+              points: ["Experiment set up QA", "Agentic SDLC"],
+            },
+            {
+              title: "Monitor",
+              points: ["Summarise trends", "Program overview"],
+            },
+            {
+              title: "Analyse",
+              points: ["Summarise results", "Recommend iteration"],
+            },
+            {
+              title: "Finalise",
+              points: ["Results pack generation", "Comms & sharing"],
+            },
+            {
+              title: "Post test",
+              points: ["Agentic SDLC"],
+            },
+          ],
+        },
+      },
 
       {
         type: "contentBlock",

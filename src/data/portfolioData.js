@@ -799,12 +799,12 @@ export const data = [
           {
             icon: "ShieldCheck",
             title: "De-risked features, prevented losses",
-            text: "Caught negative impacts before full rollout, including Target SPC and Kmart PDP recommender changes, protecting revenue.",
+            text: "Caught negative impacts before full rollout, including Target Single Page Checkout and Kmart PDP recommender changes, protecting revenue.",
           },
           {
             icon: "TrendingUp",
             title: "Revenue lift recognised",
-            text: "$8.1M CRO lift ($13.6M annualised) and $7M strategic uplift ($11.4M annualised) in H1 FY26. Attribution beyond this point pending CGLT alignment.",
+            text: "$8.1M CRO lift ($13.6M annualised) and $7M strategic uplift ($11.4M annualised) in H1 FY26. Attribution beyond this point pending new framework.",
           },
         ],
       },
@@ -962,7 +962,15 @@ export const data = [
         label: "Operating Model",
         title: "Centre of Excellence",
         content:
-          "<strong>The CoE defines, enables, and governs the experimentation system</strong>, ensuring consistency, quality, and scalable impact across squads. It <strong>owns</strong> frameworks, standards, measurement integrity, tooling, and documentation, and <strong>guides</strong> decision-making, prioritisation, and experimentation approaches.<br><br><strong>Now:</strong> Extend existing experimentation sessions to include in house engineers and embed governance into delivery.<br><br><strong>FY27:</strong> Expand cross-functionally with a lightweight cadence and async collaboration, driving continuous improvement without adding overhead.",
+          "<strong>The CoE is the operating model for scalable experimentation</strong>, ensuring consistency, quality, and measurable impact across squads. Squads own delivery, while the CoE <strong>owns</strong> frameworks, standards, measurement integrity, tooling, governance, and shared documentation, and <strong>guides</strong> prioritisation, decision-making, and experimentation approach. ",
+        customComponent: "pages/article/CustomComponents/CoEOrbitSystem/CoEOrbitSystem",
+        customComponentProps: {
+          centerLabel: "CoE",
+          ownsTitle: "CoE Owns",
+          guidesTitle: "CoE Guides",
+          owns: ["Frameworks", "Standards", "Measurement", "Tooling", "Governance", "Knowledge"],
+          guides: ["Prioritisation", "Decisioning", "Approach"],
+        },
       },
       {
         type: "contentBlock",
@@ -976,12 +984,12 @@ export const data = [
           {
             icon: "Zap",
             title: "Quality & efficiency",
-            text: "Use AI to accelerate and enhance the entire experimentation lifecycle, from ideation to results interpretation. Leveraging partnerships with Optimizely, Google, OpenAI, and Microsoft.",
+            text: "Use AI to accelerate and enhance the entire experimentation lifecycle. Leveraging partnerships with Optimizely, Google, OpenAI, and Microsoft.",
           },
           {
             icon: "BookOpen",
             title: "Knowledge building",
-            text: "Connect AI agents with experiment outcomes and unique team insights in a shared repository, enabling faster, context-aware decision-making across squads.",
+            text: "Connect AI agents with experiment outcomes and team insights in a shared repository, enabling context-aware decision-making across squads.",
           },
           {
             icon: "Users",
@@ -991,7 +999,7 @@ export const data = [
           {
             icon: "Cpu",
             title: "Future of experimentation",
-            text: "Move beyond CX-layer testing toward system-level optimisation, including how we test and evaluate AI models at scale in production.",
+            text: "Move beyond CX-layer testing toward system-level optimisation, including how we test AI models at scale in production.",
           },
         ],
       },
@@ -1048,25 +1056,25 @@ export const data = [
       {
         type: "contentBlock",
         label: "Success Measures",
-        title: "FY27 success measures",
+        title: "FY27 CoE success measures",
         itemBgColor: "#F4F2EF",
         content: "Focus on quality, impact, and continuity. Not just velocity and revenue.",
         columns: { l: 3, md: 1, s: 1 },
         items: [
           {
+            icon: "Users",
+            title: "Continuity",
+            text: "<strong>%</strong> of experiment learnings documented and shared across teams<br><strong>%</strong> of winning experiments scaled to production within a defined timeframe",
+          },
+          {
             icon: "CheckCircle",
             title: "Quality",
-            text: "<strong>%</strong> of tests with no unintended side effects<br><strong>%</strong> of tests backed by data or research<br><strong>%</strong> of tests reaching conclusive outcomes",
+            text: "<strong>%</strong> of tests reaching conclusive outcomes<br><strong>%</strong> of tests with no unintended side effects",
           },
           {
             icon: "TrendingUp",
             title: "Impact",
-            text: "<strong>#</strong> of squads delivering measurable improvements through early-stage or in-market experimentation<br><strong>$</strong> revenue uplift through CRO initiatives (TBC)",
-          },
-          {
-            icon: "Users",
-            title: "Continuity",
-            text: "<strong>%</strong> of experiment learnings documented and shared across teams<br><strong>%</strong> of winning experiments scaled to production within a defined timeframe",
+            text: "<strong>#</strong> of squads delivering measurable improvements through early-stage or in-market experimentation<br><strong>$</strong> revenue recognised through experimentation by squads",
           },
         ],
       },

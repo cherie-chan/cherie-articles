@@ -10,11 +10,13 @@ import SlideCarousel from "./SlideCarousel/SlideCarousel";
 import AnimatedBarChart from "../../CustomComponents/AnimatedBarChart/AnimatedBarChart";
 import ExperimentationLifecycle from "../../CustomComponents/ExperimentationLifecycle/ExperimentationLifecycle";
 import AgenticABTestingLifecycle from "../../CustomComponents/AgenticABTestingLifecycle/AgenticABTestingLifecycle";
+import CoEOrbitSystem from "../../CustomComponents/CoEOrbitSystem/CoEOrbitSystem";
 
 const customComponentMap = {
   "pages/article/CustomComponents/AnimatedBarChart/AnimatedBarChart": AnimatedBarChart,
   "pages/article/CustomComponents/ExperimentationLifecycle/ExperimentationLifecycle": ExperimentationLifecycle,
   "pages/article/CustomComponents/AgenticABTestingLifecycle/AgenticABTestingLifecycle": AgenticABTestingLifecycle,
+  "pages/article/CustomComponents/CoEOrbitSystem/CoEOrbitSystem": CoEOrbitSystem,
 };
 
 const ContentBlock = ({

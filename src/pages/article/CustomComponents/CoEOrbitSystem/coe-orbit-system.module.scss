@@ -1,0 +1,245 @@
+@import "src/styles/imports";
+
+.wrapper {
+  width: 100%;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.legendPill {
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.scene {
+  --orbit-scale-y: 0.58;
+  --orbit-inner-radius: min(25vw, 220px);
+  --orbit-outer-radius: min(35vw, 310px);
+  position: relative;
+  isolation: isolate;
+  height: calc(2 * var(--orbit-outer-radius) * var(--orbit-scale-y) + clamp(62px, 6.2vw, 78px) + 32px);
+  border-radius: 24px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 35% 45%, rgba(122, 73, 186, 0.1), transparent 28%),
+    radial-gradient(circle at 65% 40%, rgba(122, 73, 186, 0.08), transparent 24%),
+    radial-gradient(circle at 50% 62%, rgba(87, 196, 255, 0.05), transparent 28%), rgba(255, 255, 255, 0.55);
+}
+
+.orbitSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -3;
+  overflow: visible;
+}
+
+.ellipseOwns {
+  cx: 50%;
+  cy: 50%;
+  rx: var(--orbit-inner-radius);
+  ry: calc(var(--orbit-inner-radius) * var(--orbit-scale-y));
+  fill: none;
+  stroke: rgba(34, 34, 34, 0.8);
+  stroke-width: 2;
+}
+
+.ellipseGuides {
+  cx: 50%;
+  cy: 50%;
+  rx: var(--orbit-outer-radius);
+  ry: calc(var(--orbit-outer-radius) * var(--orbit-scale-y));
+  fill: none;
+  stroke: rgba(34, 34, 34, 0.8);
+  stroke-width: 2;
+  stroke-dasharray: 6 10;
+}
+
+.core {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(124px, 14vw, 190px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #8b66cd 0%, #6f45b3 56%, #5b359d 100%);
+  box-shadow:
+    0 0 0 1px rgba(122, 73, 186, 0.4),
+    0 14px 36px rgba(95, 52, 160, 0.28);
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: clamp(24px, 2.4vw, 40px);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  z-index: 0;
+}
+
+.orbitLayer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.ownsLayer {
+  --orbit-radius: var(--orbit-inner-radius);
+  --duration: 28s;
+}
+
+.guidesLayer {
+  --orbit-radius: var(--orbit-outer-radius);
+  --duration: 38s;
+}
+
+.trackerOwns,
+.trackerGuides {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scaleY(var(--orbit-scale-y));
+  pointer-events: none;
+}
+
+.trackerOwns {
+  animation: trackerOrbitOwns var(--duration) linear infinite;
+  animation-delay: var(--delay);
+}
+
+.trackerGuides {
+  animation: trackerOrbitGuides var(--duration) linear infinite;
+  animation-delay: var(--delay);
+}
+
+.planet {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: clamp(62px, 6.2vw, 78px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  padding: 0;
+  line-height: 1;
+  font-size: clamp(11px, 0.92vw, 14px);
+  font-weight: 600;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  animation: planetPulse 3.8s ease-in-out infinite;
+  animation-delay: calc(var(--index) * 0.22s);
+  box-shadow: 0 8px 18px rgba(77, 45, 123, 0.22);
+}
+
+.planet span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1.1;
+  font-size: clamp(9px, 0.75vw, 11px);
+  transform: translate(-50%, -50%);
+}
+
+.planetOwns {
+  background: radial-gradient(circle at 30% 30%, #8f68ce 0%, #6f45b3 58%, #5b359d 100%);
+}
+
+.planetGuides {
+  background: radial-gradient(circle at 30% 30%, #b08ddb 0%, #9a78cd 58%, #815db8 100%);
+}
+
+@keyframes trackerOrbitOwns {
+  from {
+    transform: translate(-50%, -50%) scaleY(var(--orbit-scale-y)) rotate(0deg) translateX(var(--orbit-inner-radius));
+  }
+
+  to {
+    transform: translate(-50%, -50%) scaleY(var(--orbit-scale-y)) rotate(360deg) translateX(var(--orbit-inner-radius));
+  }
+}
+
+@keyframes trackerOrbitGuides {
+  from {
+    transform: translate(-50%, -50%) scaleY(var(--orbit-scale-y)) rotate(0deg) translateX(var(--orbit-outer-radius));
+  }
+
+  to {
+    transform: translate(-50%, -50%) scaleY(var(--orbit-scale-y)) rotate(360deg) translateX(var(--orbit-outer-radius));
+  }
+}
+
+@keyframes planetPulse {
+  0%,
+  100% {
+    box-shadow: 0 8px 18px rgba(77, 45, 123, 0.2);
+    filter: saturate(1);
+  }
+
+  50% {
+    box-shadow: 0 12px 28px rgba(77, 45, 123, 0.32);
+    filter: saturate(1.07);
+  }
+}
+
+@include media(S) {
+  .legend {
+    margin-bottom: 12px;
+    gap: 8px;
+  }
+
+  .legendPill {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .scene {
+    --orbit-scale-y: 0.62;
+    --orbit-inner-radius: min(24vw, 135px);
+    --orbit-outer-radius: min(34vw, 185px);
+    height: calc(2 * var(--orbit-outer-radius) * var(--orbit-scale-y) + clamp(44px, 11vw, 56px) + 24px);
+    border-radius: 18px;
+  }
+
+  .core {
+    width: clamp(86px, 19vw, 112px);
+    font-size: clamp(18px, 4.8vw, 24px);
+  }
+
+  .planet {
+    width: clamp(44px, 11vw, 56px);
+    font-size: clamp(9px, 2.3vw, 11px);
+    padding: 5px;
+  }
+
+  .ownsLayer {
+    --duration: 22s;
+  }
+
+  .guidesLayer {
+    --duration: 28s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trackerOwns,
+  .trackerGuides,
+  .planet {
+    animation: none;
+  }
+}

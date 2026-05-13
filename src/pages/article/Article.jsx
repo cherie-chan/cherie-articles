@@ -71,6 +71,9 @@ const Article = ({ isAbout = false }) => {
         isOpen={isPresentationMode}
         onClose={exitPresentationMode}
         slides={articleData.content || []}
+        title={articleData.title}
+        entity={articleData.entity}
+        year={articleData.year}
       />
     </>
   );

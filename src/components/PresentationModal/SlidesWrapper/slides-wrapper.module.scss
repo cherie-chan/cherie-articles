@@ -34,6 +34,25 @@
   }
 }
 
+.titleSlide {
+  text-align: center;
+
+  h1 {
+    font-size: 64px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    color: #000;
+    line-height: 1.1;
+  }
+
+  p {
+    font-size: 24px;
+    color: #666;
+    margin: 0;
+    font-weight: 400;
+  }
+}
+
 .thankYouSlide {
   text-align: center;
 

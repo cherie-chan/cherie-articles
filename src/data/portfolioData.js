@@ -1409,8 +1409,8 @@ export const data = [
     content: [
       {
         type: "quote",
-        quote: "Rethinking how A/B testing supports value recognition in an enablement-first world.",
-        highlightWords: ["enablement-first"],
+        quote: "Rethinking how A/B testing supports value recognition as an enabling foundation.",
+        highlightWords: ["enabling foundation"],
         highlightColor: "#009758ff",
         isTextInverted: true,
       },
@@ -1426,7 +1426,7 @@ export const data = [
         label: "Moving Forward",
         title: "Shifting to an enablement model",
         content:
-          "There is no longer a need to recognise value for experimentation or CRO as a standalone program of work. <strong>We are moving towards an enablement model</strong> that strengthens in-house capability. The focus shifts from claiming standalone value to how A/B testing supports product squads in validating and measuring the impact of their work. This change reflects organisational maturity and a more sustainable approach to experimentation.",
+          "There is no longer a need to recognise value for experimentation or CRO as a standalone program of work. <strong>We are moving towards an enablement model</strong> that strengthens in-house capability. The focus shifts from claiming standalone value to how A/B testing supports product squads in validating and measuring the impact of their work. This change reflects organisational maturity and a more sustainable approach to experimentation.<br/><br/><a href='https://cherie-articles.vercel.app/article/Experimentation%20Evolution' target='_blank' rel='noopener noreferrer'>Learn more about the practice FY27 evolution →</a>",
       },
       {
         type: "quote",

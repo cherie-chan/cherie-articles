@@ -1400,6 +1400,217 @@ export const data = [
     ],
   },
   {
+    title: "A/B Testing Value Recognition",
+    entity: "Kmart Group",
+    year: "2026",
+    type: "Case studies",
+    thumbnail: "/images/experimentation/vision.jpeg",
+    largeThumbnail: false,
+    content: [
+      {
+        type: "quote",
+        quote: "Rethinking how A/B testing drives value recognition in an enablement-first world.",
+        highlightWords: ["enablement-first"],
+        highlightColor: "#009758ff",
+        isTextInverted: true,
+      },
+      {
+        type: "contentBlock",
+        label: "Context",
+        title: "The FY26 value recognition challenge",
+        content:
+          "In FY26, the experimentation practice faced significant challenges in value recognition. <strong>Attributing long-term value is inherently difficult</strong>, and forecasted value over shorter periods can be easily disrupted by unpredictable production changes or market fluctuations. This begs a fundamental question: what is the role of A/B testing in value measurement and attribution? Before developing a new framework to recognise incremental revenue from experimentation, we must start with the <strong>why</strong>.",
+      },
+      {
+        type: "contentBlock",
+        label: "Moving Forward",
+        title: "Shifting to an enablement model",
+        content:
+          "There is no longer a need to recognise value for experimentation or CRO as a standalone program of work. <strong>We are moving towards an enablement model</strong> that strengthens in-house capability. The focus shifts from claiming standalone value to how A/B testing supports product squads in validating and measuring the impact of their work. This change reflects organisational maturity and a more sustainable approach to experimentation.",
+      },
+      {
+        type: "quote",
+        quote: "Not all value can be measured in incremental revenue, and that's perfectly acceptable.",
+        highlightWords: ["Not all value"],
+        highlightColor: "#009758ff",
+        isTextInverted: true,
+      },
+      {
+        type: "contentBlock",
+        label: "Value Beyond Revenue",
+        title: "Experiments driving non-revenue value",
+        content:
+          "You can't put a dollar value on more confident decisions and learnings. These experiments demonstrate the broader impact of A/B testing:",
+        display: "slideCarousel",
+        slides: [
+          {
+            image: "/images/experimentation/Slide3.png",
+            title: "Substitue recommender experiment",
+          },
+          {
+            image: "/images/experimentation/Slide2.png",
+            title: "Header login nudge experiment",
+          },
+          {
+            image: "/images/experimentation/Slide4.png",
+            title: "Kmail & Reviews opt-in optimisation",
+          },
+        ],
+      },
+      {
+        type: "contentBlock",
+        label: "Value Beyond Revenue",
+        title: "Things we value and continue to drive",
+        content:
+          "We need to distinguish between <strong>incremental revenue</strong> and other valuable outcomes. Both are important, but they serve different purposes and require different measurement approaches. A/B testing delivers significant value beyond revenue. These outcomes are equally important for strategic decision-making and long-term business health:",
+        itemBgColor: "#F4F2EF",
+        columns: { l: 3, md: 2, s: 1 },
+        items: [
+          {
+            icon: "Heart",
+            title: "Better customer experience",
+            text: "Improving usability, accessibility, and satisfaction for our customers.",
+          },
+          {
+            icon: "Users",
+            title: "More engaging customers",
+            text: "Driving deeper interaction and connection with our platform.",
+          },
+          {
+            icon: "Lightbulb",
+            title: "Discovery & learnings",
+            text: "Validating assumptions and building organisational knowledge.",
+          },
+          {
+            icon: "ShieldCheck",
+            title: "Risk & loss prevention",
+            text: "Identifying potential issues before they impact the business at scale.",
+          },
+          {
+            icon: "Infinity",
+            title: "Lifetime value & loyalty",
+            text: "Driving subscriptions, reviews, and long-term customer relationships.",
+          },
+          {
+            icon: "Target",
+            title: "Specific metrics",
+            text: "Directional lift on squad-owned metrics.",
+          },
+        ],
+      },
+      {
+        type: "contentBlock",
+        label: "Value Beyond Revenue",
+        title: "Measurement considerations",
+        content:
+          "When tracking non-revenue value, context matters. <strong>Directional lift</strong> is often more valuable than absolute numbers, especially when considering relativity, cohort and other factors. <strong>The key is consistency</strong>: if squads own and track the same metrics over time (like Add to Cart rates), patterns become meaningful even without revenue attribution.",
+      },
+
+      {
+        type: "contentBlock",
+        label: "Incremental Revenue",
+        title: "When revenue attribution matters",
+        content:
+          "<strong>Not all experiments are revenue-driving</strong>, and that's expected. However, there will still be cases where we need to articulate clear value, particularly for strategic initiatives or major product changes. In these situations, we should develop a clearer framework to recognise incremental revenue from A/B testing with integrity and precision. <br/><br/>What are the criteria for determining if a feature or optimisation drives incremental revenue? And what is the role of A/B testing in that determination?",
+      },
+      {
+        type: "quote",
+        quote: "There is no perfect way to work out the actual numbers.",
+        highlightWords: ["no perfect way"],
+        highlightColor: "#009758ff",
+        isTextInverted: true,
+      },
+      {
+        type: "contentBlock",
+        label: "Practice Perspective",
+        title: "Our goals for value recognition",
+        content: "From the experimentation practice's perspective, the goal is twofold:",
+        columns: { l: 2, md: 2, s: 1 },
+        items: [
+          {
+            icon: "CheckCircle",
+            title: "Enable confident validation",
+            text: "Empower squads to confidently validate commercial outcomes and make data-driven decisions.",
+          },
+          {
+            icon: "ShieldCheck",
+            title: "Protect attribution integrity",
+            text: "Ensure attribution and practice integrity where revenue claims are being made from A/B test results.",
+          },
+        ],
+      },
+      {
+        type: "contentBlock",
+        label: "Open Question 1",
+        title: "Supporting evidence vs. requirement",
+        content:
+          "<strong>Should A/B testing be required to define incremental revenue?</strong> Or should it serve as supporting evidence for stronger value claims? This distinction affects how product squads approach experimentation and how leadership evaluates success.",
+      },
+      {
+        type: "contentBlock",
+        label: "Open Question 2",
+        title: "Should we look past FY26 H2 and just move on?",
+        content:
+          "Several FY26 experiments meet the previous value attribution criteria. The question is: should we recognise these, or start fresh from FY27 with a new framework?",
+        columns: { l: 2, md: 1, s: 1 },
+        items: [
+          {
+            title: "Wider page size + 5 products per row (rolled out)",
+            text: "Driving CVR (88% statistical significance) and AOV (99%+ SS)",
+          },
+          {
+            title: "PDP Recommender redesign with RTR (rolled out)",
+            text: "Driving AOV (98% SS)",
+          },
+          {
+            title: "Reduce White Space - UI components",
+            text: "Filter engagement (99%+ SS) and AOV (99%+ SS)",
+          },
+          {
+            title: "Condensed product cards in PLP & SLP",
+            text: "Click through (99%+ SS) and AOV (91% SS)",
+          },
+        ],
+      },
+      {
+        type: "contentBlock",
+        label: "Open Question 3",
+        title: "Double counting dilemma and cannibalisation between squads",
+        content:
+          "A critical challenge emerges when multiple teams can contribute to the same uplift, and one team's work can negatively impact another thing. <br/><br/><strong>Example 1: Multiple contributors to the same uplift</strong><br/>The PDP recommender experiment is a case in point. The experiment itself (optimisation and redesign) was driven by the Explore squad, but the underlying recommender model was built by the Perso squad. How should each squad articulate their value contribution?<br/><br/><strong>Example 2: One initiative cannibalising another</strong><br/>If we introduce a free delivery threshold in cart to drive AOV, it may hurt loyalty program sign-up rates. How do we balance and measure these trade-offs?",
+      },
+
+      {
+        type: "contentBlock",
+        label: "Open Question 4",
+        title: "How should we balance statistical rigour with the need to move at pace?",
+        content:
+          "A critical tension exists between reaching statistical significance with adequate sample size and the business need to move quickly. <strong>In the previous framework, value was sometimes recognised in the grey zone</strong> without enough data or time to reach conclusive results, as a business decision. While pragmatic in the moment, this practice has hurt the experimentation practice's integrity and undermines confidence in our recommendations. How do we strike the right balance between speed and rigour without compromising trust?",
+      },
+      {
+        type: "contentBlock",
+        label: "Open Question 5",
+        title: "Kmart sales vs 3P sales consideration",
+        content:
+          "How do we account for <strong>first-party vs. third-party seller dynamics</strong> in value attribution? Revenue lift may manifest differently across seller types, and our framework needs to address this nuance for fair and accurate measurement.",
+      },
+      {
+        type: "contentBlock",
+        label: "Open Question 6",
+        title: "Do we have any other questions?",
+        content:
+          "As we reshape our value recognition framework, what additional considerations or challenges should we address? This is an opportunity to surface any outstanding concerns or edge cases that need clarity.",
+      },
+      {
+        type: "quote",
+        quote: "Moving forward requires alignment on principles, not just processes.",
+        highlightWords: ["principles"],
+        highlightColor: "#009758ff",
+        isTextInverted: true,
+      },
+    ],
+  },
+  {
     title: "Coffee & latte art",
     entity: "Personal",
     type: "Science & art",

@@ -1438,28 +1438,6 @@ export const data = [
       {
         type: "contentBlock",
         label: "Value Beyond Revenue",
-        title: "Experiments driving non-revenue value",
-        content:
-          "You can't put a dollar value on more confident decisions and learnings. These experiments demonstrate the broader impact of A/B testing:",
-        display: "slideCarousel",
-        slides: [
-          {
-            image: "/images/experimentation/Slide3.png",
-            title: "Substitue recommender experiment",
-          },
-          {
-            image: "/images/experimentation/Slide2.png",
-            title: "Header login nudge experiment",
-          },
-          {
-            image: "/images/experimentation/Slide4.png",
-            title: "Kmail & Reviews opt-in optimisation",
-          },
-        ],
-      },
-      {
-        type: "contentBlock",
-        label: "Value Beyond Revenue",
         title: "Things we value and continue to drive",
         content:
           "We need to distinguish between <strong>incremental revenue</strong> and other valuable outcomes, which require different measurement approaches but are equally important for strategic decision-making and long-term business health:",
@@ -1501,9 +1479,35 @@ export const data = [
       {
         type: "contentBlock",
         label: "Value Beyond Revenue",
+        title: "Experiments driving non-revenue value",
+        content:
+          "You can't put a dollar value on more confident decisions and learnings. These experiments demonstrate the broader impact of A/B testing:",
+        display: "slideCarousel",
+        slides: [
+          {
+            image: "/images/experimentation/Slide3.png",
+            title: "Substitue recommender experiment",
+          },
+          {
+            image: "/images/experimentation/Slide2.png",
+            title: "Header login nudge experiment",
+          },
+          {
+            image: "/images/experimentation/Slide4.png",
+            title: "Kmail & Reviews opt-in optimisation",
+          },
+        ],
+      },
+      {
+        type: "contentBlock",
+        label: "Value Beyond Revenue",
         title: "Measurement considerations",
         content:
-          "When tracking non-revenue value, context matters. <strong>Directional lift</strong> is often more valuable than absolute numbers, especially when considering relativity, cohort and other factors. <strong>The key is consistency</strong>: if squads own and track the same metrics over time (like Add to Cart rates), patterns become meaningful even without revenue attribution.",
+          "<strong>Directional lift matters more than absolute numbers.</strong> When squads own and consistently track the same metrics over time, patterns become meaningful even without revenue attribution. This is where metric ownership drives value.",
+        image: {
+          src: "/images/experimentation/Login.png",
+          description: "Login session trend after scaling the optimisation in April",
+        },
       },
 
       {

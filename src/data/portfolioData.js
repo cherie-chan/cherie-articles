@@ -1451,8 +1451,8 @@ export const data = [
           },
           {
             icon: "Users",
-            title: "More engaging customers",
-            text: "Driving deeper interaction and connection.",
+            title: "Customer engagement",
+            text: "Higher activity, repeat visits, and product adoption.",
           },
           {
             icon: "Lightbulb",
@@ -1471,8 +1471,8 @@ export const data = [
           },
           {
             icon: "Target",
-            title: "Specific metrics",
-            text: "Directional lift on squad-owned metrics.",
+            title: "Strategic indicators",
+            text: "Measurable progress on team-owned success metrics.",
           },
         ],
       },
@@ -1501,9 +1501,9 @@ export const data = [
       {
         type: "contentBlock",
         label: "Value Beyond Revenue",
-        title: "Measurement considerations",
+        title: "Driving measurable growth",
         content:
-          "<strong>Directional lift matters more than absolute numbers.</strong> When squads own and consistently track the same metrics over time, patterns become meaningful even without revenue attribution. This is where metric ownership drives value.",
+          "<strong>Demonstrating growth matters more than absolute numbers.</strong> When squads own and consistently track the same metrics over time, patterns become meaningful even without revenue attribution. This is where metric ownership drives value.",
         image: {
           src: "/images/experimentation/Login.png",
           description: "Login session trend after scaling the optimisation in April",

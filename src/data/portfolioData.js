@@ -1409,7 +1409,7 @@ export const data = [
     content: [
       {
         type: "quote",
-        quote: "Rethinking how A/B testing drives value recognition in an enablement-first world.",
+        quote: "Rethinking how A/B testing supports value recognition in an enablement-first world.",
         highlightWords: ["enablement-first"],
         highlightColor: "#009758ff",
         isTextInverted: true,

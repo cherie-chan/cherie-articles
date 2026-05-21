@@ -1462,19 +1462,19 @@ export const data = [
         label: "Value Beyond Revenue",
         title: "Things we value and continue to drive",
         content:
-          "We need to distinguish between <strong>incremental revenue</strong> and other valuable outcomes. Both are important, but they serve different purposes and require different measurement approaches. A/B testing delivers significant value beyond revenue. These outcomes are equally important for strategic decision-making and long-term business health:",
+          "We need to distinguish between <strong>incremental revenue</strong> and other valuable outcomes, which require different measurement approaches but are equally important for strategic decision-making and long-term business health:",
         itemBgColor: "#F4F2EF",
         columns: { l: 3, md: 2, s: 1 },
         items: [
           {
             icon: "Heart",
             title: "Better customer experience",
-            text: "Improving usability, accessibility, and satisfaction for our customers.",
+            text: "Improving usability and satisfaction for our customers.",
           },
           {
             icon: "Users",
             title: "More engaging customers",
-            text: "Driving deeper interaction and connection with our platform.",
+            text: "Driving deeper interaction and connection.",
           },
           {
             icon: "Lightbulb",
@@ -1484,7 +1484,7 @@ export const data = [
           {
             icon: "ShieldCheck",
             title: "Risk & loss prevention",
-            text: "Identifying potential issues before they impact the business at scale.",
+            text: "Catching issues before they impact the business at scale.",
           },
           {
             icon: "Infinity",

@@ -1400,7 +1400,7 @@ export const data = [
     ],
   },
   {
-    title: "A/B Testing Value Recognition",
+    title: "A/B Testing Value Attribution",
     entity: "Kmart Group",
     year: "2026",
     type: "Case studies",
@@ -1409,24 +1409,24 @@ export const data = [
     content: [
       {
         type: "quote",
-        quote: "Rethinking how A/B testing supports value recognition as an enabling foundation.",
-        highlightWords: ["enabling foundation"],
+        quote: "Rethinking value attribution and the role of A/B testing within it.",
+        highlightWords: ["value attribution"],
         highlightColor: "#009758ff",
         isTextInverted: true,
       },
       {
         type: "contentBlock",
-        label: "Context",
-        title: "The FY26 value recognition challenge",
+        label: "Executive Summary",
+        title: "From FY26 pressure to FY27 enablement",
         content:
-          "In FY26, the experimentation practice faced significant challenges in value recognition. <strong>Attributing long-term value is inherently difficult</strong>, and forecasted value over shorter periods can be easily disrupted by unpredictable production changes or market fluctuations. This begs a fundamental question: what is the role of A/B testing in value measurement and attribution? Before developing a new framework to recognise incremental revenue from experimentation, we must start with the <strong>why</strong>.",
+          "In FY26, product squads faced significant pressure to drive and recognise revenue through experimentation & optimisation. The primary focus was meeting velocity and revenue squad goals rather than discovery and learning.<br/><br/>In FY27, we are adjusting those goals. There is also no longer a need to recognise value for CRO as a standalone program of work. The focus shifts to how experimentation supports product squads in both validating and measuring the impact of their work through high-quality experimentation and continuity.<br/><br/><a href='https://cherie-articles.vercel.app/article/Experimentation%20Evolution' target='_blank' rel='noopener noreferrer'>Learn more about the practice FY27 evolution →</a><br/><br/>",
       },
       {
         type: "contentBlock",
-        label: "Moving Forward",
-        title: "Shifting to an enablement model",
+        label: "The Question",
+        title: "Starting with why",
         content:
-          "There is no longer a need to recognise value for experimentation or CRO as a standalone program of work. <strong>We are moving towards an enablement model</strong> that strengthens in-house capability. The focus shifts from claiming standalone value to how A/B testing supports product squads in validating and measuring the impact of their work. This change reflects organisational maturity and a more sustainable approach to experimentation.<br/><br/><a href='https://cherie-articles.vercel.app/article/Experimentation%20Evolution' target='_blank' rel='noopener noreferrer'>Learn more about the practice FY27 evolution →</a>",
+          "What is the role of A/B testing in value measurement and attribution? Before developing a new framework to recognise incremental revenue from experimentation, we must start with the <strong>why</strong>.",
       },
       {
         type: "quote",
@@ -1528,7 +1528,8 @@ export const data = [
         type: "contentBlock",
         label: "Practice Perspective",
         title: "Our goals for value recognition",
-        content: "From the experimentation practice's perspective, the goal is twofold:",
+        content:
+          "Attribution is inherently uncertain, especially when upstream funnel changes, production shifts, and market conditions affect outcomes. Our goal is not perfect numbers. It is to equip squads with a consistent framework for high-quality experimentation and credible measurement over time.",
         columns: { l: 2, md: 2, s: 1 },
         items: [
           {

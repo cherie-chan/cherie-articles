@@ -1529,7 +1529,7 @@ export const data = [
         label: "Practice Perspective",
         title: "Our goals for value recognition",
         content:
-          "Attribution is inherently uncertain, especially when upstream funnel changes, production shifts, and market conditions affect outcomes. Our goal is not perfect numbers. It is to equip squads with a consistent framework for high-quality experimentation and credible measurement over time.",
+          "Attribution is inherently uncertain, especially when funnel changes and market conditions influence outcomes. Our goal is not perfect numbers, but a consistent framework that equips squads to run high-quality experiments and build credible measurement over time.",
         columns: { l: 2, md: 2, s: 1 },
         items: [
           {
